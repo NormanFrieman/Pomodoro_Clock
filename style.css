@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    background-color: rgb(49, 49, 49);
+}
+.container{
+    font-family: abel, sans-serif;
+
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+
+    line-height: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    flex-direction: column;
+}
+.title{
+    color: rgb(155, 155, 248);
+    font-size: 45px;
+}
+.hora{
+    color: white;
+    font-size: 70px;
+}
+.comand{
+    color: rgb(155, 155, 248);
+    font-size: 35px;
+
+    cursor: pointer;
+    transition: 0.4s;
+}
+.box .comand:hover{
+    color: white;
+}
+.entradaDados{
+    transition: 1s;
+    display: none;
+}
+input{
+    width: 25%;
+    font-family: abel, sans-serif;
+    font-size: 35px;
+
+    color: white;
+    background-color: rgb(49, 49, 49);
+    border-color: transparent;
+}

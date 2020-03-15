@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="//use.edgefonts.net/abel.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p class="title"><strong>Go?</strong></p>
+            <p class="hora">25:00</p>
+            <p class="comand" id="btnStart" onclick="começou()">Start</p>
+            <p class="comand" onclick="resetar()">Restart</p>
+            <p class="comand" id="btnConfig" onclick="abrirConfig()">Setup</p>
+        </div>
+        <div class="entradaDados">
+            <p class="comand">Minutos <input type="number" id="inputMin" placeholder="Ex: 25"></p>
+            <p class="comand">Segundos <input type="number" id="inputSeg" placeholder="Ex: 0"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
