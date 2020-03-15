@@ -110,8 +110,8 @@ function abrirConfig(){
 }
 
 function resetarConfig(){
-    if(document.getElementById("inputMin").value == "" || document.getElementById("inputSeg").value == ""){
-        alert("Nada digitado")
+    if(document.getElementById("inputMin").value == "" || document.getElementById("inputSeg").value == "" || document.getElementById("inputSeg").value.length > 2 || document.getElementById("inputMin").value.length > 2){
+        alert("Tem parada errada ai irmão")
     }else{
         document.getElementsByClassName("entradaDados")[0].style.display = "none"
         document.getElementById("btnConfig").innerHTML = "Setup"
