@@ -46,12 +46,14 @@ function startado(){
             }
             segundo = 59
             document.getElementsByClassName("hora")[0].innerHTML = `${minuto}:${segundo}`
+            document.querySelector("title").innerText = `${minuto}:${segundo}`
         }else{
             segundo--
             if(Number(segundo) < 10){
                 segundo = `0${segundo}`
             }
             document.getElementsByClassName("hora")[0].innerHTML = `${minuto}:${segundo}`
+            document.querySelector("title").innerText = `${minuto}:${segundo}`
         }
     }
 }
@@ -69,6 +71,7 @@ function pausar(){
     else{
         document.getElementsByClassName("title")[0].innerHTML = "<strong>Pause</strong>"
 
+        document.querySelector("title").innerText = "Pomodoro Clock"
         document.getElementById("btnStart").innerHTML = "Start"
         document.getElementById("btnStart").removeAttribute("onclick")
         document.getElementById("btnStart").setAttribute("onclick", "começou()")
@@ -92,6 +95,7 @@ function resetar(){
     aux = 0
     aux2 = 0
 
+    document.querySelector("title").innerText = "Pomodoro Clock"
     document.getElementById("btnStart").innerHTML = "Start"
     document.getElementById("btnStart").removeAttribute("onclick")
     document.getElementById("btnStart").setAttribute("onclick", "começou()")
